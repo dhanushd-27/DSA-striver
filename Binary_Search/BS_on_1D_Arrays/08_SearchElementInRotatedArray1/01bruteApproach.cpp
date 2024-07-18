@@ -1,3 +1,5 @@
+// Elements in Given Array are not repeated
+
 #include <bits/stdc++.h>
 using namespace std;
 
