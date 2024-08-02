@@ -32,15 +32,15 @@ int findPages(vector<int> a, int n, int m){
     while(low <= high){
         int mid = (low + high) / 2;
         int students = countStudents(a, mid);
-        if (students < m) {
-            high = mid - 1;
+        if (students > m) {
+            low = mid + 1;
         }
         else{
-            low= mid + 1;
+            high = mid - 1;
         }
     }
 
-    return high-1;
+    return low;
 }
 
 int main()
