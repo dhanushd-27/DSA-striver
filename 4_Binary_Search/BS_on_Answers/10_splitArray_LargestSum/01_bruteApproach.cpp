@@ -38,6 +38,10 @@ int splitArray(vector<int> nums, int k){
 // TC: O((high - low)*N)
 // SC: O(1)
 
+
+/* 
+    Given an integer array ‘A’ of size ‘N’ and an integer ‘K'. Split the array ‘A’ into ‘K’ non-empty subarrays such that the largest sum of any subarray is minimized. Your task is to return the minimized largest sum of the split.
+*/
 int main()
 {
     vector<int> a = {10, 20, 30, 40};
