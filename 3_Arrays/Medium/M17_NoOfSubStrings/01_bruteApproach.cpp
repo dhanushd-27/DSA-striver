@@ -6,23 +6,10 @@ int numberOfSubstrings(string str){
     int n = str.length();
 
     for(int i = 0; i < n; i++){
-        bool statusA = false, statusB = false, statusC = false;
-        string curSubStr;
-
+        int hash[3] = {0};
         for(int j = i; j < n; j++){
-            curSubStr += str[j];
-
-            if(str[j] == 'a') {
-                statusA = true;
-            }
-            if(str[j] == 'b') {
-                statusB = true;
-            }
-            if(str[j] == 'c'){
-                statusC = true;
-            }
-
-            if(statusA && statusB && statusC){
+            hash[str[j] - 'a'] = 1;
+            if(hash[0] + hash[1] + hash[2] == 3){
                 count++;
             }
         }

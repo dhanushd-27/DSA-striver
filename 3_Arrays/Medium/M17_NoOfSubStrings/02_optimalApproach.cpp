@@ -3,15 +3,14 @@ using namespace std;
 
 int numberOfSubstrings(string str){
     int count = 0;
+    int hash[3] = {-1, -1, -1};
     int n = str.length();
 
     for(int i = 0; i < n; i++){
-        int hash[3] = {0};
-        for(int j = i; j < n; j++){
-            hash[str[j] - 'a'] = 1;
-            if(hash[0] + hash[1] + hash[2] == 3){
-                count++;
-            }
+        hash[str[i] - 'a'] = i;
+
+        if(hash[0] != -1 && hash[1] != -1 && hash[2] != -1){
+            count += (1 + min(hash[0], min(hash[1], hash[2])));
         }
     }
 
