@@ -3,7 +3,7 @@ using namespace std;
 
 int numberOfSubarrays(vector<int> nums, int k){
     int sum = 0;
-    map<int, int> hashMap;
+    unordered_map<int, int> hashMap;
     int ans = 0;
     int n = nums.size();
     vector<int> zeroOne(n, 0);
