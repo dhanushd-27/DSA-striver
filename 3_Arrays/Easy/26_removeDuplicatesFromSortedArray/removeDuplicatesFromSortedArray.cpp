@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Leetcode - 26
+
 int removeDuplicates(vector<int>& nums) {
     int i = 0, j = 0;
     int prev = -101;
