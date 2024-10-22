@@ -2,6 +2,9 @@
 
 // Reverse vowels of a string
 
+#include <bits/stdc++.h>
+using namespace std;
+
 // Find given character is a vowel or not
 bool isVowel(char c){
     c = (char)tolower(c);
