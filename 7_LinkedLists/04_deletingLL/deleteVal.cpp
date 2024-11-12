@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// WAP to delete tail of the given linked list;
+// WAP to delete node with given val in the given linked list;
 
 class Node{
     public:
